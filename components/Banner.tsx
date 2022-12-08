@@ -9,7 +9,7 @@ type Props = {}
 
 function Banner({}: Props) {
     const [text, count] = useTypewriter({
-        words: ["<RitikaWrites/>", "Hey, it's Ritika!"],
+        words: ["<Ritika w{R}ites/>", "Hey, it's Ritika!"],
         loop: true,
         delaySpeed: 2000,
     })
@@ -32,7 +32,7 @@ function Banner({}: Props) {
           </h1>
         </div>
 
-        <div className='pt-4'>
+        <div className='pt-4 text-red-500'>
           <Link href='#about'>
             <button className='bannerButton'>About</button>
           </Link>
@@ -40,10 +40,10 @@ function Banner({}: Props) {
             <button className='bannerButton'>Projects</button>
           </Link>
           <Link href='#exp'>
-            <button className='bannerButton'>Experience</button>
+            <button className='bannerButton'>Skills</button>
           </Link>
           <Link href='#skills'>
-            <button className='bannerButton'>Skills</button>
+            <button className='bannerButton'>Experience</button>
           </Link>
           
         </div>

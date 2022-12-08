@@ -7,4 +7,9 @@
         @apply px-6 py-2 border-gray-800 rounded-full uppercase text-xs
         tracking-widest text-gray-500 transition-all hover:border-red-700/40 hover:text-red-700/40
     }
+
+    .contactInput {
+        @apply outline-none bg-orange-300/30 rounded-md border-b px-6 py-4 border-gray-200
+        text-gray-500 placeholder-gray-500 transition-all focus:border-red-700 focus:text-red-800/80
+    }
 }
