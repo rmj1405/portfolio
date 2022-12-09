@@ -33,16 +33,16 @@ function Banner({}: Props) {
         </div>
 
         <div className='pt-4 text-red-500'>
-          <Link href='#about'>
+          <Link href={'#about'}>
             <button className='bannerButton'>About</button>
           </Link>
-          <Link href='#projects'>
+          <Link href={'#projects'}>
             <button className='bannerButton'>Projects</button>
           </Link>
-          <Link href='#exp'>
+          <Link href={'#exp'}>
             <button className='bannerButton'>Skills</button>
           </Link>
-          <Link href='#skills'>
+          <Link href={'#skills'}>
             <button className='bannerButton'>Experience</button>
           </Link>
           

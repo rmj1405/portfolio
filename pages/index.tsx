@@ -7,6 +7,8 @@ import styles from '../styles/Home.module.css'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import ContactMe from '../components/ContactMe'
+import Link from 'next/link'
+import { SocialIcon } from 'react-social-icons'
 
 export default function Home() {
   return (
@@ -47,6 +49,19 @@ export default function Home() {
       <section id='contact' className='snap-start'>
         <ContactMe/>
       </section>
+
+      {/* replace this with go up icon */}
+      <Link href={'#banner'}>
+        <footer className='sticky bottom-5 w-full cursor-pointer'>
+          <div className='flex items-center justify-center'>
+          <SocialIcon 
+            url="https://github.com/rmj1405" 
+            fgColor='grey'
+            bgColor='transparent'
+            />
+          </div>
+        </footer>
+      </Link>
       
     </div>
   )
