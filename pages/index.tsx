@@ -3,12 +3,11 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import About from '../components/About'
 import Experience from '../components/Experience'
-import styles from '../styles/Home.module.css'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import ContactMe from '../components/ContactMe'
 import Link from 'next/link'
-import { SocialIcon } from 'react-social-icons'
+import { ChevronUpIcon } from '@heroicons/react/24/solid'
 
 export default function Home() {
   return (
@@ -36,9 +35,9 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section id='skills' className='snap-start'>
+      {/* <section id='skills' className='snap-start'>
         <Skills/>
-      </section>
+      </section> */}
 
       {/* Experience */}
       <section id='exp' className='snap-center'>
@@ -53,12 +52,9 @@ export default function Home() {
       {/* replace this with go up icon */}
       <Link href={'#banner'}>
         <footer className='sticky bottom-5 w-full cursor-pointer'>
-          <div className='flex items-center justify-center'>
-          <SocialIcon 
-            url="https://github.com/rmj1405" 
-            fgColor='grey'
-            bgColor='transparent'
-            />
+          <div className='flex flex-row items-center justify-center text-gray-500 space-x-2'>
+            <ChevronUpIcon className="h-7 w-7"/>
+            <p className='font-light'> Back to top</p>
           </div>
         </footer>
       </Link>

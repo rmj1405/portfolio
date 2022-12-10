@@ -4,8 +4,8 @@
 
 @layer components {
     .bannerButton {
-        @apply px-6 py-2 border-gray-800 rounded-full uppercase text-xs
-        tracking-widest text-gray-500 transition-all hover:border-red-700/40 hover:text-red-700/40
+        @apply px-6 py-2 uppercase text-[12px]
+        tracking-widest text-gray-500 transition-all hover:text-red-600 hover:font-semibold
     }
 
     .contactInput {

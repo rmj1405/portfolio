@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import Image from 'next/image'
+import mypic from '../assets/Subject.png'
 
 type Props = {}
 
@@ -15,7 +17,7 @@ const About = (props: Props) => {
             About
         </h3>
 
-        <motion.img 
+        <motion.div
             initial={{
                 x : -200,
                 opacity: 0,
@@ -25,15 +27,32 @@ const About = (props: Props) => {
             }}
             whileInView={{ opacity: 1, x : 0 }}
             viewport={{ once: false }}
-            src='../assets/ss.png'
-            className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-            md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
-        />
+            >
 
-        <div className='space-y-10 px-0 md:px-10'>
-            <h4 className='text-3xl text-red-600 font-semibold'>here is a bg</h4>
+            <Image
+                src={mypic}
+                alt=''
+                className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-contain
+                md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]'
+            />
+        </motion.div>
+
+        <div className='space-y-10 px-0 md:px-10 w-[700px]'>
+            <h4 className='text-3xl text-red-600 font-semibold'>My name is Ritika Joshi</h4>
             <p className='text-gray-500 text-base'>
-                A whole ass paragraph of words about me
+                I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. 
+                <br/>
+                <br/>
+                I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. I am a rising software engineer pursuing Computer Science at the National
+                University of Singapore. 
+
+                
             </p>
         </div>
     </motion.div>

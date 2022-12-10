@@ -28,11 +28,13 @@ function Header({}: Props) {
             url="https://github.com/rmj1405" 
             fgColor='grey'
             bgColor='transparent'
+            target={'_blank'}
             />
             <SocialIcon 
             url="https://linkedin.com/in/ritika-manish-joshi-812b66204" 
             fgColor='grey'
             bgColor='transparent'
+            target={'_blank'}
             />
         </motion.div>
 
@@ -55,6 +57,7 @@ function Header({}: Props) {
         className='flex flex-row items-center text-gray-300 cursor-pointer'>
             
             <SocialIcon
+            url='#contact'
             className='cursor-pointer'
             network='email'
             fgColor='grey'
