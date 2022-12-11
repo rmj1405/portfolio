@@ -65,7 +65,7 @@ function Header({}: Props) {
             />
 
             <Link href={'#contact'}>
-                <p className='hidden md:inline-flex text-sm text-gray-500'>Get In Touch</p>
+                <p className='hidden md:inline-flex text-sm text-gray-500 uppercase'>Get In Touch</p>
             </Link>
         </motion.div>
         
