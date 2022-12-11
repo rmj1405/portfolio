@@ -20,23 +20,23 @@ function ContactMe({}: Props) {
   return (
     <div className='h-screen relative flex flex-col text-center md:text-left md:flex-col max-w-7xl
     px-10 justify-evenly mx-auto items-center'>
-        <h3 className='top-24 uppercase tracking-[20px] text-red-600 text-2xl'>
+        <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-red-600 text-md md:text-2xl'>
             Contact
         </h3>
 
         <div className='flex flex-col space-y-10'>
-          <h4 className='text-4xl font-semibold text-center text-red-600'>
+          <h4 className='text-2xl md:text-4xl font-semibold text-center text-red-600'>
             Let's chat!
           </h4>
 
           <div className='space-y-10'> 
-            <div className='flex items-center space-x-5 justify-center text-gray-600'>
-                <MapPinIcon className='text-red-600 h-7 w-7 animate-pulse'/> 
-                <p className='text-2xl'>Singapore</p>
+            <div className='flex items-center space-x-3 justify-center text-gray-600'>
+                <MapPinIcon className='text-red-600 h-5 w-5 md:h-7 md:w-7 animate-pulse'/> 
+                <p className='md:text-2xl'>Singapore</p>
               </div>
-              <div className='flex items-center space-x-5 justify-center text-gray-600'>
-                <EnvelopeIcon className='text-red-600 h-7 w-7 animate-pulse'/> 
-                <p className='text-2xl'>ritikamanishjoshi@gmail.com</p>
+              <div className='flex items-center space-x-3 justify-center text-gray-600'>
+                <EnvelopeIcon className='text-red-600 h-5 w-5 md:h-7 md:w-7 animate-pulse'/> 
+                <p className='md:text-2xl'>ritikamanishjoshi@gmail.com</p>
               </div>
           </div>
 

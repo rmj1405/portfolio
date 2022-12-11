@@ -13,7 +13,7 @@ function Skills({}: Props) {
         className='min-h-screen flex relative flex-col text-center md:text-left xl:flex-row
         max-w-[2000px] xl:px-10 xl:space-y-0 justify-center mx-auto items-center'>
 
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-red-600 text-2xl'>
+        <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-red-600 text-md md:text-2xl'>
             Skills
         </h3>
 

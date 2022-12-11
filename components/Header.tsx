@@ -38,7 +38,7 @@ function Header({}: Props) {
             />
         </motion.div>
 
-        {/* <Link href={'#contact'}> */}
+        
 
         <motion.div 
             initial={{
@@ -64,9 +64,11 @@ function Header({}: Props) {
             bgColor='transparent'
             />
 
-            <p className='hidden md:inline-flex text-sm text-gray-500'>Get In Touch</p>
+            <Link href={'#contact'}>
+                <p className='hidden md:inline-flex text-sm text-gray-500'>Get In Touch</p>
+            </Link>
         </motion.div>
-        {/* </Link> */}
+        
     </header>
   )
 }

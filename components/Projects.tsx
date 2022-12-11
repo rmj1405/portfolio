@@ -7,30 +7,29 @@ import ProjectCard from './ProjectCard'
 type Props = {}
 
 function Projects({}: Props) {
-    const projects = [1, 2, 3]
   return (
     <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full
-        justify-evenly mx-auto items-center z-0'>
+        justify-evenly mx-auto items-center z-0 p-10'>
 
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-red-600 text-2xl'>
+        <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-red-600 text-md md:text-2xl'>
             Projects
         </h3>
-        <h3 className='absolute top-36 uppercase tracking-[3px] text-red-400 font-normal text-sm'>
+        {/* <h3 className='absolute top-36 uppercase tracking-[3px] text-red-400 font-normal text-sm'>
             Swipe left for more
-        </h3>
+        </h3> */}
 
         {/* Project Card WIP */}
-        {/* <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory justify-center'>
+        <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory z-20
+            scrollbar-thin scrollbar-thumb-red-700/40'>
             <ProjectCard/>
-            <ProjectCard/>
-        </div> */}
+        </div>
 
-        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 '>
-            {projects.map((project, i) => (
+        {/* <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 '>
+
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center
                 justify-center p-20 md:p-44 h-screen'>
                     <motion.div
@@ -48,7 +47,7 @@ function Projects({}: Props) {
 
                     <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-4xl font-semibold text-center text-orange-600'>
-                            {i + 1}<span className='font-light'> | </span>Colourz Android App
+                            Colourz Android App
                         </h4>
                         <p className='text-lg text-center md:text-left text-gray-700'>
                             Brief description of the project Brief description of the project Brief description of the 
@@ -56,8 +55,8 @@ function Projects({}: Props) {
                         </p>
                     </div>
                 </div>
-            ))}
-        </div>
+
+        </div> */}
 
         <div className='w-full absolute top-[30%] bg-red-700/20 left-0 h-[450px] -skew-y-12'>
         </div>
